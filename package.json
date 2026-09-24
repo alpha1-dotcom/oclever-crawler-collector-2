@@ -1,0 +1,24 @@
+{
+  "name": "oclever-crawler-collector-2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cloudflare Worker that reports AI-crawler visits to OClever. Passes all traffic through unchanged.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  },
+  "cloudflare": {
+    "bindings": {
+      "INGEST_KEY": {
+        "description": "Your OClever ingest key (starts with ik_). In OClever: Crawlability, Connect logs, Rotate key."
+      },
+      "API_BASE": {
+        "description": "OClever API URL. Leave the default."
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "oclever-crawler-collector-2",
+  "main": "src/index.js",
+  "compatibility_date": "2025-01-01",
+  "vars": {
+    "API_BASE": "https://api.oclever.com"
+  }
+  // INGEST_KEY is a secret, not a var: set it with `wrangler secret put INGEST_KEY`
+  // (or in the dashboard). Routes are added in the dashboard; see README.
+}
